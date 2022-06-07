@@ -71,13 +71,14 @@ body {
   background: #586e8d;
 }
 
-.icon > img {
-  width: 100px;
-}
-
 .footer {
   margin-top: 50px;
 }
+
+.icon > img {
+  width: 60px;
+}
+
 .icon {
   display: flex;
   justify-content: center;
@@ -90,5 +91,8 @@ body {
   }
   .app-area {
     height: 100vmin;
+  }
+  .inner-area {
+    padding: 5% 0 0 8%;
   }
 }
