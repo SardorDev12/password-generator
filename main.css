@@ -26,6 +26,7 @@ body {
   margin-top: 10vh;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, 0.4);
+  background-repeat: no-repeat;
 }
 
 .inner-area {
@@ -84,7 +85,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    max-height: 100vh;
+  }
   .app-area {
-    height: 120vmin;
+    height: 100vmin;
   }
 }
