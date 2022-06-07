@@ -60,7 +60,9 @@ body {
   padding: 8%;
 }
 .password {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #10b981;
   width: 45%;
   height: 2rem;
