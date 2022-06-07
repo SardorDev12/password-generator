@@ -69,3 +69,9 @@ body {
   border-radius: 5px;
   background: #586e8d;
 }
+
+@media only screen and (max-width: 768px) {
+  .app-area {
+    height: 100vmin;
+  }
+}
