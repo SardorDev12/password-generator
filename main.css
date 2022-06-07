@@ -21,7 +21,7 @@ body {
 .app-area {
   background-color: #2c3036;
   width: 80vmin;
-  height: 80vmin;
+  height: 65vmin;
   margin: 0 auto;
   margin-top: 10vh;
   border-radius: 10px;
@@ -70,8 +70,21 @@ body {
   background: #586e8d;
 }
 
+.icon > img {
+  width: 100px;
+}
+
+.footer {
+  margin-top: 50px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 @media only screen and (max-width: 768px) {
   .app-area {
-    height: 100vmin;
+    height: 120vmin;
   }
 }
