@@ -2,28 +2,8 @@
 const passwordEl = document.querySelectorAll(".password");
 const generateBtn = document.querySelector(".generate-btn");
 // all characters
+let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-let chars = [];
-for (let i = 48; i < 123; i++) {
-  if (
-    String.fromCharCode(i) != "[" &&
-    String.fromCharCode(i) != "\\" &&
-    String.fromCharCode(i) != "]" &&
-    String.fromCharCode(i) != "<" &&
-    String.fromCharCode(i) != "_" &&
-    String.fromCharCode(i) != "`" &&
-    String.fromCharCode(i) != ":" &&
-    String.fromCharCode(i) != ";" &&
-    String.fromCharCode(i) != "," &&
-    String.fromCharCode(i) != "=" &&
-    String.fromCharCode(i) != ">" &&
-    String.fromCharCode(i) != "?" &&
-    String.fromCharCode(i) != "@" &&
-    String.fromCharCode(i) != "^"
-  ) {
-    chars.push(String.fromCharCode(i));
-  }
-}
 // password generating
 let generatePassword = function (l) {
   let passwords = [1, 2, 3, 4];

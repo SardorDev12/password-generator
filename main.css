@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #10b981;
+  color: #77f5cb;
   width: 45%;
   height: 2rem;
   border-radius: 5px;
@@ -90,7 +90,7 @@ body {
     max-height: 100vh;
   }
   .app-area {
-    height: 100vmin;
+    height: 70vmin;
   }
   .inner-area {
     padding: 5% 0 0 8%;
