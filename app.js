@@ -1,5 +1,5 @@
 // elements
-const password = document.querySelectorAll(".password");
+const passwordEl = document.querySelectorAll(".password");
 const generateBtn = document.querySelector(".generate-btn");
 // all characters
 
@@ -26,34 +26,20 @@ for (let i = 48; i < 123; i++) {
 }
 // password generating
 let generatePassword = function (l) {
-  let passwords = [];
-  let randomPasword1 = "";
-  let randomPasword2 = "";
-  let randomPasword3 = "";
-  let randomPasword4 = "";
+  let passwords = [1, 2, 3, 4];
 
-  for (let i = 0; i < l; i++) {
-    randomChar = Math.trunc(Math.random() * 62);
-    randomPasword1 += chars[randomChar];
+  let password = "";
+  for (let j = 0; j < 4; j++) {
+    for (let i = 0; i < 6; i++) {
+      let randomNum = Math.trunc(Math.random() * 61);
+      password += chars[randomNum];
+    }
+    passwords[j] = password;
+    password = "";
   }
-  passwords.push(randomPasword1);
-  for (let i = 0; i < l; i++) {
-    randomChar = Math.trunc(Math.random() * 62);
-    randomPasword2 += chars[randomChar];
-  }
-  passwords.push(randomPasword2);
-  for (let i = 0; i < l; i++) {
-    randomChar = Math.trunc(Math.random() * 62);
-    randomPasword3 += chars[randomChar];
-  }
-  passwords.push(randomPasword3);
-  for (let i = 0; i < l; i++) {
-    randomChar = Math.trunc(Math.random() * 62);
-    randomPasword4 += chars[randomChar];
-  }
-  passwords.push(randomPasword4);
-  for (let i = 0; i < password.length; i++) {
-    password[i].textContent = passwords[i];
+
+  for (let i = 0; i < passwords.length; i++) {
+    passwordEl[i].textContent = passwords[i];
   }
 };
 
