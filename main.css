@@ -90,7 +90,7 @@ body {
     max-height: 100vh;
   }
   .app-area {
-    height: 70vmin;
+    height: 100vmin;
   }
   .inner-area {
     padding: 5% 0 0 8%;
